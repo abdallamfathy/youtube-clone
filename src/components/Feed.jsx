@@ -19,9 +19,9 @@ const Feed = () => {
   
 
   return (
-    <Stack sx={{flexDirection: {sx:"column",md:"row"}}}>
+    <Stack sx={{flexDirection: {xs:"column",md:"row"}}}>
       <Box
-      sx={{height:{sx:"auto",md:"92vh"},borderRight:"1px solid #3d3d3d" , px:{sx:0,md:2}}}>
+      sx={{height:{xs:"auto",md:"92vh"},borderRight:"1px solid #3d3d3d" , px:{xs:0,md:2}}}>
         <Sidebar
           selectedCategory={selectedCategory}
           setselectedCategory={setselectedCategory}
@@ -32,7 +32,7 @@ const Feed = () => {
         </Typography>
       </Box>
 
-      <Box p={2} sx={{overglowY:"auto", height:"90vh",flex:2}}>
+      <Box p={2} sx={{overflowY:"auto", height:"90vh",flex:2}}>
         <Typography variant="h4" fontWeight="bold" mb={2} sx={{color:"white"}}>
           {selectedCategory} <span style={{color:"#F31503"}}>Videos</span>
         </Typography>
